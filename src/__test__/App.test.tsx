@@ -3,8 +3,8 @@ import { render } from '@testing-library/react';
 import App from '../App';
 
 describe('<App />', () => {
-    it('matches snapshot', () => {
-        const { container } = render(<App />);
-        expect(container).toBeInTheDocument();
-    });
+  it('App in the Document', () => {
+    const { container } = render(<App />);
+    expect(container).toBeInTheDocument();
+  });
 });
