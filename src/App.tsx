@@ -1,8 +1,8 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import theme from '@style/theme';
 import GlobalStyles from '@style/globalStyles';
 import styled from 'styled-components';
+import theme from '@style/theme';
 
 const Text = styled.span`
   color: ${(props) => props.theme.colors.text};
