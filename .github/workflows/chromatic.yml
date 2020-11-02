@@ -4,9 +4,9 @@ name: 'Chromatic Deployment'
 # the event that will trigger the action
 on:
   push:
-    branches: [ master, develop ]
+    branches: [master, develop]
   pull_request:
-    branches: [ master, develop ]
+    branches: [master, develop]
 
 # what the action will do
 jobs:
@@ -15,7 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     # the list of steps that the action will go through
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # Required to retrieve git history
       - run: yarn
       - uses: chromaui/action@v1
         # options required to the GitHub chromatic action
