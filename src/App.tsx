@@ -1,18 +1,17 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from 'style/globalStyles';
-import styled from 'styled-components';
 import theme from 'style/theme';
-
-const Text = styled.span`
-  color: ${(props) => props.theme.colors.text};
-`;
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from 'components/Routes';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Text>파스텔로 마음을 전해요</Text>
+      <Router>
+        <Routes />
+      </Router>
     </ThemeProvider>
   );
 }
