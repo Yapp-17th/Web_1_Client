@@ -50,6 +50,7 @@ export default CakeDetail;
 
 const Wrapper = styled.div`
   max-width: 384px;
+  padding : 5px;
 `;
 const CakeImage = styled.img`
   width: 384px;
