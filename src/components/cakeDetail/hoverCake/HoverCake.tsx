@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { StyledComponentPropsWithRef } from 'styled-components';
 import { BiBookmark } from 'react-icons/bi';
 
-export interface HoverCakeProps extends StyledComponentPropsWithRef<'div'>{
+export interface HoverCakeProps extends StyledComponentPropsWithRef<'div'> {
   title: string;
   address: string;
 }
