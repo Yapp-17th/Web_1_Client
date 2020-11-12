@@ -2,11 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import HoverCake from 'components/cakeDetail/hoverCake';
-
-export interface CakeDetailProps {
-  cakeName: string;
-  storeName: string;
-}
+import { Card, CardPastelData, Title, BannerTitle, Subtitle, SpanButton, ButtonFloating } from './commonStyles'
 
 const MainPageLayout = styled.div`
   max-width: 1920px;
@@ -67,19 +63,12 @@ const SectionPopluar = styled(MainPageContainerBlock)`
 const SectionPopluarWrapper = styled.section`
   /* background-image: url('/assets/main_02.png'); */
 `
-const SectionPopularCards = styled.div`
+const SectionPopularCardsWrapper = styled.div`
   display: flex;
   flex-direction: row !important;
 `;
-const Card = styled.div`
-  display: flex;
-  width:300px;
-  height:300px;
-  background-color: ${props => props.color};  
-`;
 
-const SectionRecommendKeywordWrapper = styled.section`
-`
+const SectionRecommendKeywordWrapper = styled.section``;
 
 const SectionRecommendKeyword = styled(MainPageContainerBlock)`
   display: flex;
@@ -111,12 +100,11 @@ const SectionNew = styled(MainPageContainerBlock)`
   height: 1056px;
 `;
 
-const CakeWrapper = styled.div`
+const CakesWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
 `;
-
 
 const SectionBottomWrapper = styled.section``;
 const SectionBottom = styled(MainPageContainerBlock)`
@@ -124,47 +112,6 @@ const SectionBottom = styled(MainPageContainerBlock)`
 
   height: 640px;
 `;
-
-const CardPastelData = styled.div<{type?: string}>`
-  width: 180px;
-  height: 248px;
-  margin-left: 24px;
-  padding: 36px 0 80px;
-  opacity: 0.8;
-  background-color: #494949;
-  visibility: ${props => {
-    if (props.type === "hidden"){ 
-      return "hidden"; 
-    }
-  }};
-`
-const BannerTitle = styled.div`
-  ${(props) => props.theme.font.n36m};
-`;
-
-const Title = styled.div`
-  ${(props) => props.theme.font.n26b}
-`
-const Subtitle = styled.div`
-  ${(props) => props.theme.font.n14r}
-`;
-const SpanButton = styled.span`
-  cursor: pointer;
-`;
-
-const ButtonFloating = styled.button`
-  position: fixed;
-  bottom: 5%;
-  left:80%;
-
-  width: 88px;
-  height: 88px;
-  padding: 20px;
-  border-radius: 50%;
-  
-  box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.3);
-  background-color: #000000;
-`
 
 const Column = styled.div``;
 
@@ -198,11 +145,11 @@ function MainPage(props : CakeDetailProps) {
             더 보러가기 &gt;
           </SpanButton>
           <br />
-          <SectionPopularCards>
+          <SectionPopularCardsWrapper>
             <Card color="blue"/>
             <Card color="red"/>
             <Card color="yellow"/>
-          </SectionPopularCards>
+          </SectionPopularCardsWrapper>
         </SectionPopluar>
         
       </SectionPopluarWrapper>
@@ -247,7 +194,7 @@ function MainPage(props : CakeDetailProps) {
               Refresh &gt;
             </SpanButton>
           </div>
-          <CakeWrapper>
+          <CakesWrapper>
             <HoverCake
               style={{ margin: '12px' }}
               title="체리 메이 블라썸 케이크"
@@ -288,7 +235,7 @@ function MainPage(props : CakeDetailProps) {
               title="체리 메이 블라썸 케이크"
               address="서울 마포구 매봉산로 75"
             />
-          </CakeWrapper>
+          </CakesWrapper>
         </SectionNew>
       </SectionNewWrapper>
       <SectionBottomWrapper>
