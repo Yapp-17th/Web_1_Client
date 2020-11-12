@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { BiWalk } from 'react-icons/bi';
-import { MdCake } from 'react-icons/md';
-import { AiFillHeart } from 'react-icons/ai';
+import HoverCake from 'components/cakeDetail/hoverCake';
 
 export interface CakeDetailProps {
   cakeName: string;
@@ -93,7 +91,6 @@ const RecommendKeywordButtonWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
 `
 
 const RecommendKeywordButton = styled.button`
@@ -113,6 +110,14 @@ const SectionNew = styled(MainPageContainerBlock)`
   display: flex;
   height: 1056px;
 `;
+
+const CakeWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+`;
+
+
 const SectionBottomWrapper = styled.section``;
 const SectionBottom = styled(MainPageContainerBlock)`
   display: flex;
@@ -146,19 +151,7 @@ const Subtitle = styled.div`
 const SpanButton = styled.span`
   cursor: pointer;
 `;
-const CakeImage = styled.img`
-  width: 384px;
-  border-radius: 5px;
-  margin-bottom: 0.5rem;
-`;
 
-// const StoreText = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   ${(props) => props.theme.font.n14r};
-//   color: #1f1f1f;
-// `;
 const Column = styled.div``;
 
 function MainPage(props : CakeDetailProps) {
@@ -240,16 +233,59 @@ function MainPage(props : CakeDetailProps) {
               Refresh &gt;
             </SpanButton>
           </div>
+          <CakeWrapper>
+            <HoverCake
+              style={{ margin: '12px' }}
+              title="체리 메이 블라썸 케이크"
+              address="서울 마포구 매봉산로 75"
+            />
+            <HoverCake
+              style={{ margin: '12px' }}
+              title="체리 메이 블라썸 케이크"
+              address="서울 마포구 매봉산로 75"
+            />
+            <HoverCake
+              style={{ margin: '12px' }}
+              title="체리 메이 블라썸 케이크"
+              address="서울 마포구 매봉산로 75"
+            />
+            <HoverCake
+              style={{ margin: '12px' }}
+              title="체리 메이 블라썸 케이크"
+              address="서울 마포구 매봉산로 75"
+            />
+            <HoverCake
+              style={{ margin: '12px' }}
+              title="체리 메이 블라썸 케이크"
+              address="서울 마포구 매봉산로 75"
+            />
+            <HoverCake
+              style={{ margin: '12px' }}
+              title="체리 메이 블라썸 케이크"
+              address="서울 마포구 매봉산로 75"
+            />
+            <HoverCake
+              style={{ margin: '12px' }}
+              title="체리 메이 블라썸 케이크"
+              address="서울 마포구 매봉산로 75"
+            />
+            <HoverCake
+              style={{ margin: '12px' }}
+              title="체리 메이 블라썸 케이크"
+              address="서울 마포구 매봉산로 75"
+            />
+          </CakeWrapper>
         </SectionNew>
       </SectionNewWrapper>
       <SectionBottomWrapper>
         <SectionBottom>
           <Subtitle> 파스텔 실시간 근황 </Subtitle>
-          <div style={{display:"flex", justifyContent:"space-between"}}>
+          <div style={{display:"flex", justifyContent:"space-between", marginBottom:"56px"}}>
             <Title> 파스텔은 언젠가 대기업이 될 거예요! </Title>
             <span>불철주야 소비자를 위해 달리고 있습니다. <br />항상 응원해주시고 트래픽을 올려주세요. 불철주야 소비자를 위해 달리고.</span>
           </div>
           <div style={{display:"flex", justifyContent:"space-between"}}>
+            <CardPastelData type={"hidden"}> </CardPastelData>
             <CardPastelData type={"hidden"}> </CardPastelData>
             <CardPastelData> </CardPastelData>
             <CardPastelData> </CardPastelData>
