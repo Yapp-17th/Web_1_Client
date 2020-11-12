@@ -152,6 +152,20 @@ const SpanButton = styled.span`
   cursor: pointer;
 `;
 
+const ButtonFloating = styled.button`
+  position: fixed;
+  bottom: 5%;
+  left:80%;
+
+  width: 88px;
+  height: 88px;
+  padding: 20px;
+  border-radius: 50%;
+  
+  box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.3);
+  background-color: #000000;
+`
+
 const Column = styled.div``;
 
 function MainPage(props : CakeDetailProps) {
@@ -294,7 +308,7 @@ function MainPage(props : CakeDetailProps) {
           </div>
         </SectionBottom>
       </SectionBottomWrapper>
-        
+      <ButtonFloating />
       {/* </MainPageContainerBlock> */}
     </MainPageLayout>
   );
