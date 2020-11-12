@@ -3,16 +3,16 @@ import styled, { StyledComponentPropsWithRef } from 'styled-components';
 import { BiBookmark } from 'react-icons/bi';
 
 export interface HoverCakeProps extends StyledComponentPropsWithRef<'div'> {
-  title: string;
+  name: string;
   address: string;
 }
 
-function HoverCake({ title, address, ...rest }: HoverCakeProps) {
+function HoverCake({ name, address, ...rest }: HoverCakeProps) {
   return (
     <Wrapper {...rest}>
       <CakeImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRPNA3FY8BoFki14SSvVE5wu3axlGvyIzTGJQ&usqp=CAU" />
       <Overlay>
-        <CakeName>{title}</CakeName>
+        <CakeName>{name}</CakeName>
         <Address>{address}</Address>
         <Bookmark />
       </Overlay>
