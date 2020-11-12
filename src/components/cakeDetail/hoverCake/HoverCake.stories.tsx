@@ -21,6 +21,6 @@ const Template: Story<HoverCakeProps> = (args) => <HoverCake {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  title: '체리 메이 블라썸 케이크',
+  name: '체리 메이 블라썸 케이크',
   address: '서울 마포구 매봉산로 75',
 };

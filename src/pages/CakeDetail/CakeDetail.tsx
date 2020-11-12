@@ -6,48 +6,52 @@ function CakeDetail() {
   return (
     <>
       <Wrapper>
+        <SubTitle>케이크 상세 저보</SubTitle>
+        <Title>당신이 찾은 케이크에요</Title>
+      </Wrapper>
+      <Wrapper>
         <SubTitle>관련 키워드 추천</SubTitle>
         <Title>다른 케이크도 구경해봐요</Title>
       </Wrapper>
       <CakeWrapper>
         <HoverCake
           style={{ margin: '12px' }}
-          title="체리 메이 블라썸 케이크"
+          name="체리 메이 블라썸 케이크"
           address="서울 마포구 매봉산로 75"
         />
         <HoverCake
           style={{ margin: '12px' }}
-          title="체리 메이 블라썸 케이크"
+          name="체리 메이 블라썸 케이크"
           address="서울 마포구 매봉산로 75"
         />
         <HoverCake
           style={{ margin: '12px' }}
-          title="체리 메이 블라썸 케이크"
+          name="체리 메이 블라썸 케이크"
           address="서울 마포구 매봉산로 75"
         />
         <HoverCake
           style={{ margin: '12px' }}
-          title="체리 메이 블라썸 케이크"
+          name="체리 메이 블라썸 케이크"
           address="서울 마포구 매봉산로 75"
         />
         <HoverCake
           style={{ margin: '12px' }}
-          title="체리 메이 블라썸 케이크"
+          name="체리 메이 블라썸 케이크"
           address="서울 마포구 매봉산로 75"
         />
         <HoverCake
           style={{ margin: '12px' }}
-          title="체리 메이 블라썸 케이크"
+          name="체리 메이 블라썸 케이크"
           address="서울 마포구 매봉산로 75"
         />
         <HoverCake
           style={{ margin: '12px' }}
-          title="체리 메이 블라썸 케이크"
+          name="체리 메이 블라썸 케이크"
           address="서울 마포구 매봉산로 75"
         />
         <HoverCake
           style={{ margin: '12px' }}
-          title="체리 메이 블라썸 케이크"
+          name="체리 메이 블라썸 케이크"
           address="서울 마포구 매봉산로 75"
         />
       </CakeWrapper>
