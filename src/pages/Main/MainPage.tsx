@@ -115,8 +115,8 @@ const SectionBottom = styled(MainPageContainerBlock)`
 
 const Column = styled.div``;
 
-function MainPage(props : CakeDetailProps) {
-  const {} = props;
+function MainPage() {
+  // const {} = props;
   const clickSpanButton = ():void => {
     console.log("clickSpanButton !!");
     // window.location.href = 어디어디;
