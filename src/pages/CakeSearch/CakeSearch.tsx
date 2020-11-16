@@ -5,11 +5,10 @@ import SearchPage from '../../components/component/SearchPage'
 const CakeSearchPage = () => {
   return (
     <>
-        <SearchPage cakeCount={302}/>
+      <SearchPage cakeCount={302}/>
     </>
   ) 
     
 }
 
 export default CakeSearchPage;
-
