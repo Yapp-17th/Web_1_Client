@@ -9,6 +9,17 @@ const fontWeight = {
 const theme: DefaultTheme = {
   colors: {
     text: '#1f1f1f',
+    coolBlack: '#1b1c1d',
+    coolGrey: '#858a8d',
+    lightGrey: '#bdc2c6',
+    coolWhite: '#f8f8f9',
+    white: '#fff',
+    pastelYellow: '#fff4d4',
+    pastelBlue: '#99abff',
+    pastelRed: '#ff99a9',
+    pastelGreen: '#a6ffb7',
+    pastelPurple: '#e5b9ff',
+    alert: '#ff0000',
   },
   font: {
     n36m: css`
