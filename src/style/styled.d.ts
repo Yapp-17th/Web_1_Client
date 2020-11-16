@@ -15,6 +15,7 @@ declare module 'styled-components' {
       n16r: FlattenSimpleInterpolation;
       n14m: FlattenSimpleInterpolation;
       n14r: FlattenSimpleInterpolation;
+      n12m: FlattenSimpleInterpolation;
     };
   }
 }
