@@ -51,6 +51,11 @@ const theme: DefaultTheme = {
       font-size: 14px;
       line-height: 20px;
     `,
+    n12m: css`
+      font-weight: ${fontWeight.medium};
+      font-size: 12px;
+      line-height: 20px;
+    `,
   },
 };
 
