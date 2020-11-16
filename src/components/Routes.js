@@ -4,7 +4,6 @@ import CakeDetail from 'pages/CakeDetail';
 import CakeSearch from 'pages/CakeSearch';
 import Main from 'pages/Main';
 
-
 function Routes() {
   return (
     <Switch>

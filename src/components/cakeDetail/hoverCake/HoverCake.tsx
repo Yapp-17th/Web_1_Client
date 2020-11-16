@@ -48,6 +48,12 @@ const Overlay = styled.div`
   flex-direction: column;
 `;
 
+const CakeImage = styled.img`
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+`;
+
 const Wrapper = styled.div`
   position: relative;
   width: 282px;
@@ -55,13 +61,10 @@ const Wrapper = styled.div`
   &:hover ${Overlay} {
     opacity: 1;
   }
+  &:hover ${CakeImage} {
+    filter: blur(2px);
+  }
   cursor: pointer;
-`;
-
-const CakeImage = styled.img`
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
 `;
 
 const CakeName = styled.span`
