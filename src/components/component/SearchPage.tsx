@@ -69,7 +69,8 @@ function SearchPage({ cakeCount }: SearchProps) {
 export default SearchPage;
 
 const Wrapper = styled.div`
-  /* max-width: 384px; */
+  width: 1224px;
+  margin: 0 auto;
 `;
 const FindCakeCount = styled.span`
   color: #1f1f1f;
@@ -103,9 +104,7 @@ const CakeInfo = styled.div`
 const Map = styled.div`
     display: inline-flex;
     align-items: flex-start;
-    height: 1rem;
-    opacity: 0.4;
-    margin-left: 1rem;
+    margin-right : 4rem;
     border-radius: 8px;
     background-color: #fcf1e7;
     padding: 15px 20px;

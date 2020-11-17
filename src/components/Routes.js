@@ -15,6 +15,8 @@ function Routes() {
       <Route path="/store/cake/:cakeId">
         <CakeDetail />
       </Route>
+      
+
     </Switch>
   );
 }
