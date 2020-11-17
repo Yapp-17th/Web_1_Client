@@ -62,6 +62,7 @@
     "@storybook/react": "^6.0.27",
     "babel-loader": "^8.1.0",
     "chromatic": "^5.3.0",
+    "prettier": "^2.1.2",
     "react-is": "^17.0.1"
   }
 }
